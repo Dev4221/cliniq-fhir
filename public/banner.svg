@@ -1,0 +1,95 @@
+<svg width="1280" height="320" viewBox="0 0 1280 320" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0D1318"/>
+      <stop offset="100%" stop-color="#18232F"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1D9E75"/>
+      <stop offset="100%" stop-color="#378ADD"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="320" fill="url(#bg)"/>
+
+  <!-- Subtle grid lines -->
+  <line x1="0" y1="80" x2="1280" y2="80" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="0" y1="160" x2="1280" y2="160" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="320" y1="0" x2="320" y2="320" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="640" y1="0" x2="640" y2="320" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="960" y1="0" x2="960" y2="320" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+
+  <!-- Accent bar -->
+  <rect x="0" y="0" width="1280" height="3" fill="url(#accent)"/>
+
+  <!-- Left: logo and title -->
+  <circle cx="88" cy="160" r="36" fill="none" stroke="#1D9E75" stroke-width="1.5" stroke-opacity="0.4"/>
+  <circle cx="88" cy="160" r="24" fill="none" stroke="#1D9E75" stroke-width="1" stroke-opacity="0.6"/>
+  <circle cx="88" cy="160" r="6" fill="#1D9E75"/>
+  <line x1="88" y1="124" x2="88" y2="136" stroke="#1D9E75" stroke-width="1.5" stroke-opacity="0.6"/>
+  <line x1="88" y1="184" x2="88" y2="196" stroke="#1D9E75" stroke-width="1.5" stroke-opacity="0.6"/>
+  <line x1="52" y1="160" x2="64" y2="160" stroke="#1D9E75" stroke-width="1.5" stroke-opacity="0.6"/>
+  <line x1="112" y1="160" x2="124" y2="160" stroke="#1D9E75" stroke-width="1.5" stroke-opacity="0.6"/>
+
+  <!-- Title -->
+  <text x="148" y="148" font-family="system-ui, -apple-system, sans-serif" font-size="52" font-weight="600" fill="#E8E4DC" letter-spacing="-1">ClinIQ</text>
+  <text x="150" y="186" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="400" fill="#8A9BAB" letter-spacing="0.5">Clinical Operations Dashboard</text>
+
+  <!-- Divider -->
+  <line x1="148" y1="205" x2="560" y2="205" stroke="#2A3848" stroke-width="1"/>
+
+  <!-- Tags -->
+  <rect x="148" y="218" width="72" height="22" rx="4" fill="#1D9E7520" stroke="#1D9E75" stroke-width="0.5" stroke-opacity="0.6"/>
+  <text x="184" y="233" font-family="system-ui, sans-serif" font-size="11" fill="#1D9E75" text-anchor="middle">FHIR R4</text>
+
+  <rect x="230" y="218" width="56" height="22" rx="4" fill="#378ADD20" stroke="#378ADD" stroke-width="0.5" stroke-opacity="0.6"/>
+  <text x="258" y="233" font-family="system-ui, sans-serif" font-size="11" fill="#378ADD" text-anchor="middle">Claude</text>
+
+  <rect x="296" y="218" width="68" height="22" rx="4" fill="#7F77DD20" stroke="#7F77DD" stroke-width="0.5" stroke-opacity="0.6"/>
+  <text x="330" y="233" font-family="system-ui, sans-serif" font-size="11" fill="#7F77DD" text-anchor="middle">Power BI</text>
+
+  <rect x="374" y="218" width="76" height="22" rx="4" fill="#BA751720" stroke="#BA7517" stroke-width="0.5" stroke-opacity="0.6"/>
+  <text x="412" y="233" font-family="system-ui, sans-serif" font-size="11" fill="#BA7517" text-anchor="middle">ChromaDB</text>
+
+  <rect x="460" y="218" width="68" height="22" rx="4" fill="#D85A3020" stroke="#D85A30" stroke-width="0.5" stroke-opacity="0.6"/>
+  <text x="494" y="233" font-family="system-ui, sans-serif" font-size="11" fill="#D85A30" text-anchor="middle">FastAPI</text>
+
+  <!-- Right: stat cards -->
+  <!-- Card 1 -->
+  <rect x="720" y="60" width="140" height="90" rx="8" fill="#ffffff06" stroke="#2A3848" stroke-width="0.5"/>
+  <text x="790" y="100" font-family="system-ui, sans-serif" font-size="30" font-weight="600" fill="#E8E4DC" text-anchor="middle">500</text>
+  <text x="790" y="120" font-family="system-ui, sans-serif" font-size="11" fill="#8A9BAB" text-anchor="middle">patients</text>
+  <text x="790" y="138" font-family="system-ui, sans-serif" font-size="10" fill="#3DC99A" text-anchor="middle">live FHIR R4</text>
+
+  <!-- Card 2 -->
+  <rect x="876" y="60" width="140" height="90" rx="8" fill="#ffffff06" stroke="#2A3848" stroke-width="0.5"/>
+  <text x="946" y="100" font-family="system-ui, sans-serif" font-size="30" font-weight="600" fill="#E8E4DC" text-anchor="middle">78K</text>
+  <text x="946" y="120" font-family="system-ui, sans-serif" font-size="11" fill="#8A9BAB" text-anchor="middle">observations</text>
+  <text x="946" y="138" font-family="system-ui, sans-serif" font-size="10" fill="#7AB3E8" text-anchor="middle">lab results and vitals</text>
+
+  <!-- Card 3 -->
+  <rect x="1032" y="60" width="140" height="90" rx="8" fill="#ffffff06" stroke="#2A3848" stroke-width="0.5"/>
+  <text x="1102" y="100" font-family="system-ui, sans-serif" font-size="30" font-weight="600" fill="#E8E4DC" text-anchor="middle">15K</text>
+  <text x="1102" y="120" font-family="system-ui, sans-serif" font-size="11" fill="#8A9BAB" text-anchor="middle">encounters</text>
+  <text x="1102" y="138" font-family="system-ui, sans-serif" font-size="10" fill="#ECA83A" text-anchor="middle">inpatient and outpatient</text>
+
+  <!-- Mini chart bars -->
+  <rect x="720" y="175" width="18" height="40" rx="3" fill="#1D9E7530"/>
+  <rect x="744" y="162" width="18" height="53" rx="3" fill="#1D9E7550"/>
+  <rect x="768" y="155" width="18" height="60" rx="3" fill="#1D9E7570"/>
+  <rect x="792" y="148" width="18" height="67" rx="3" fill="#1D9E7590"/>
+  <rect x="816" y="140" width="18" height="75" rx="3" fill="#1D9E75"/>
+  <rect x="840" y="133" width="18" height="82" rx="3" fill="#1D9E75"/>
+
+  <text x="720" y="268" font-family="system-ui, sans-serif" font-size="10" fill="#4A5C6A">disease prevalence over time</text>
+
+  <!-- Trend line -->
+  <polyline points="876,215 910,205 944,195 978,183 1012,170 1046,158 1080,148 1114,138 1148,128 1172,120" fill="none" stroke="#378ADD" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="1172" cy="120" r="3" fill="#378ADD"/>
+  <text x="876" y="268" font-family="system-ui, sans-serif" font-size="10" fill="#4A5C6A">readmission risk trend</text>
+
+  <!-- Bottom credit -->
+  <text x="640" y="300" font-family="system-ui, sans-serif" font-size="11" fill="#4A5C6A" text-anchor="middle">Built by Devansh Bhuta · github.com/Dev4221/cliniq-fhir</text>
+</svg>
