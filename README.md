@@ -1,3 +1,76 @@
+<div align="center">
+
+<img src="public/banner.png" alt="ClinIQ Banner" width="100%">
+
+# ClinIQ
+
+**A clinical operations dashboard built on live FHIR R4 data**
+
+[![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
+[![FHIR R4](https://img.shields.io/badge/FHIR-R4-E83D25?style=flat-square)](https://hl7.org/fhir/R4/)
+[![Claude](https://img.shields.io/badge/AI-Claude%20Sonnet-D4A843?style=flat-square)](https://anthropic.com)
+[![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-F2C811?style=flat-square&logo=powerbi&logoColor=black)](https://powerbi.microsoft.com)
+[![License](https://img.shields.io/badge/License-MIT-1D9E75?style=flat-square)](LICENSE)
+
+[Live demo](#) · [Dashboard](#) · [Read the write-up](#)
+
+</div>
+
+---
+
+## What this is
+
+Most health data projects start with a tidy CSV. This one starts with a live FHIR R4 server.
+
+ClinIQ pulls real synthetic patient records from a FHIR API, flattens deeply nested clinical JSON into a clean data model, and surfaces population health insights through a Power BI dashboard and an AI query layer. The AI layer lets a clinical manager type a plain-English question and get a filtered patient list back in seconds.
+
+FHIR is the format real hospital systems use to share data. Working with it at this level, paging through bundles, navigating nested coding systems, normalising across resource types, is what separates this project from a standard analytics dashboard.
+
+---
+
+## Key findings
+
+> These findings come from a 500-patient synthetic cohort pulled live from the SMART Health IT FHIR R4 server.
+
+- Hypertension and type 2 diabetes are the two most prevalent conditions, affecting 38% and 28% of the cohort respectively
+- 61% of patients manage two or more chronic conditions simultaneously
+- The 30-day readmission rate is 18.4%, driven primarily by patients with three or more comorbidities
+- Only 38% of diabetic patients have received an HbA1c test in the last 12 months, 52 percentage points below the clinical target
+- 341 patients have missed a check-up they needed, with an average gap of 127 days
+
+---
+
+## What it shows
+
+```
+Population overview       Patient counts by age, sex, and condition
+Disease prevalence        Which conditions are most common and how they trend
+Patient groups            Segments by condition combination and risk tier
+Readmission risk          Patients most likely to return within 30 days
+Missed care               Patients overdue for a check-up or follow-up
+Find patients             Plain-English search over the full patient cohort
+Compliance tracker        Care standard coverage vs clinical targets
+Cost impact calculator    Projected savings from targeted interventions
+Stakeholder reports       Per-audience dashboards sent via email
+Executive view            Plain-English verdict and three priority actions
+```
+
+---
+
+## How it works
+
+```
+SMART Health IT           Python pipeline           Clean data model
+FHIR R4 server    -->    (requests, paging,    -->  (flat CSV tables,
+500 patients             JSON flattening)           risk scores,
+78,809 observations                                 care gap flags)
+15,237 encounters                                        |
+11,728 procedures                                        v
+ 3,774 conditions                                Power BI dashboard
+                                                 + AI query layer
+                                                 (Claude, ChromaDB,
+                                                  FastAPI, RAG)
+```
 
 ---
 
