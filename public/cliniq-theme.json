@@ -1,0 +1,75 @@
+{
+    "name": "ClinIQ",
+    "dataColors": [
+      "#1D9E75",
+      "#378ADD",
+      "#7F77DD",
+      "#BA7517",
+      "#D85A30",
+      "#639922",
+      "#D4537E",
+      "#ECA83A"
+    ],
+    "background": "#F2F1ED",
+    "foreground": "#1A1A18",
+    "tableAccent": "#1D9E75",
+    "visualStyles": {
+      "*": {
+        "*": {
+          "background": [{"color": {"solid": {"color": "#FFFFFF"}}}],
+          "border": [{"show": true, "color": {"solid": {"color": "#E0DED8"}}, "radius": 8}],
+          "title": [{"fontColor": {"solid": {"color": "#1A1A18"}}, "fontSize": 12, "fontFamily": "Segoe UI"}]
+        }
+      },
+      "card": {
+        "*": {
+          "calloutValue": [{"fontSize": 28, "fontFamily": "Segoe UI", "fontColor": {"solid": {"color": "#1A1A18"}}}],
+          "label": [{"fontSize": 11, "fontColor": {"solid": {"color": "#5A5956"}}}],
+          "background": [{"color": {"solid": {"color": "#FFFFFF"}}}]
+        }
+      },
+      "barChart": {
+        "*": {
+          "dataPoint": [{"defaultColor": {"solid": {"color": "#1D9E75"}}}],
+          "categoryAxis": [{"fontColor": {"solid": {"color": "#5A5956"}}, "fontSize": 11, "gridlineColor": {"solid": {"color": "#E0DED8"}}}],
+          "valueAxis": [{"fontColor": {"solid": {"color": "#5A5956"}}, "fontSize": 11, "gridlineColor": {"solid": {"color": "#E0DED8"}}}],
+          "background": [{"color": {"solid": {"color": "#FFFFFF"}}}]
+        }
+      },
+      "donutChart": {
+        "*": {
+          "background": [{"color": {"solid": {"color": "#FFFFFF"}}}],
+          "legend": [{"fontColor": {"solid": {"color": "#5A5956"}}, "fontSize": 11}],
+          "dataLabels": [{"show": true, "fontColor": {"solid": {"color": "#5A5956"}}, "fontSize": 10}]
+        }
+      },
+      "tableEx": {
+        "*": {
+          "header": [{"fontColor": {"solid": {"color": "#5A5956"}}, "fontSize": 11, "backColor": {"solid": {"color": "#F8F7F3"}}}],
+          "rows": [{"fontColor": {"solid": {"color": "#1A1A18"}}, "fontSize": 11, "backColor": {"solid": {"color": "#FFFFFF"}}, "altBackColor": {"solid": {"color": "#F8F7F3"}}}],
+          "grid": [{"gridVertical": false, "gridHorizontalColor": {"solid": {"color": "#E0DED8"}}}],
+          "background": [{"color": {"solid": {"color": "#FFFFFF"}}}]
+        }
+      },
+      "lineChart": {
+        "*": {
+          "background": [{"color": {"solid": {"color": "#FFFFFF"}}}],
+          "categoryAxis": [{"fontColor": {"solid": {"color": "#5A5956"}}, "fontSize": 11, "gridlineColor": {"solid": {"color": "#E0DED8"}}}],
+          "valueAxis": [{"fontColor": {"solid": {"color": "#5A5956"}}, "fontSize": 11, "gridlineColor": {"solid": {"color": "#E0DED8"}}}]
+        }
+      },
+      "clusteredBarChart": {
+        "*": {
+          "background": [{"color": {"solid": {"color": "#FFFFFF"}}}],
+          "categoryAxis": [{"fontColor": {"solid": {"color": "#5A5956"}}, "fontSize": 11}],
+          "valueAxis": [{"fontColor": {"solid": {"color": "#5A5956"}}, "fontSize": 11, "gridlineColor": {"solid": {"color": "#E0DED8"}}}]
+        }
+      },
+      "page": {
+        "*": {
+          "background": [{"color": {"solid": {"color": "#F2F1ED"}}, "transparency": 0}],
+          "wallpaper": [{"color": {"solid": {"color": "#F2F1ED"}}, "transparency": 0}]
+        }
+      }
+    }
+  }
