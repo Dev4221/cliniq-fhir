@@ -36,11 +36,13 @@ export default function Home() {
   }, []);
 
   const renderTab = () => {
-    if (loading) return (
-      <div className="flex items-center justify-center h-64">
-        <p style={{ color: "var(--muted)", fontSize: 13 }}>Loading cohort data...</p>
-      </div>
-    );
+    if (loading) {
+      return (
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "center", height: 200 }}>
+          <p style={{ color: "var(--muted)", fontSize: 13 }}>Loading cohort data...</p>
+        </div>
+      );
+    }
     switch (activeTab) {
       case "overview": return <OverviewTab cohort={cohort} />;
       case "disease": return <DiseaseRatesTab cohort={cohort} />;
@@ -55,10 +57,18 @@ export default function Home() {
   };
 
   return (
-    <div style={{ display: "grid", gridTemplateColumns: "200px 1fr", gridTemplateRows: "46px 1fr", height: "100vh", background: "var(--bg)" }}>
+    <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: "220px 1fr",
+        gridTemplateRows: "46px 1fr",
+        height: "100vh",
+        background: "var(--bg)",
+      }}
+    >
       <TopBar cohort={cohort} />
       <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} />
-      <main style={{ overflow: "auto", padding: 16 }}>
+      <main style={{ overflow: "auto", padding: 20 }}>
         {renderTab()}
       </main>
     </div>
